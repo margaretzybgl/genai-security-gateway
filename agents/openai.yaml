@@ -1,0 +1,7 @@
+interface:
+  display_name: "GenAI Security Gateway"
+  short_description: "Audit prompts for LLM security risk"
+  default_prompt: "Use $genai-security-gateway to audit this prompt for GenAI security risk."
+
+policy:
+  allow_implicit_invocation: true
