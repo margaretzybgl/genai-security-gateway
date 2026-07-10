@@ -1,9 +1,9 @@
 ---
 name: genai-security-gateway
-description: Audit LLM prompts and gateway requests for API key leakage, prompt injection, jailbreaks, developer-mode bypasses, DAN-style attacks, hidden-system-prompt extraction, and multilingual semantic variants. Use when Codex needs to inspect, score, block, explain, test, or integrate GenAI security checks for user prompts, reverse proxies, MCP tools, or local FastAPI gateways.
+description: Local-first LLM prompt firewall for auditing untrusted prompts before they reach MCP tools, agents, or AI gateways. Detects API key leakage, prompt injection, jailbreak phrases, developer-mode bypass attempts, hidden-system-prompt extraction, and multilingual semantic variants; returns structured PASS or BLOCK decisions with detector, risk level, reason, and optional semantic score.
 ---
 
-# GenAI Security Gateway
+# LLM Prompt Firewall
 
 ## Quick Start
 
@@ -44,7 +44,7 @@ The package also reserves an optimization interface:
 python -c 'from scripts.guard_core import optimize_prompt_v1; print(optimize_prompt_v1("make a short video about a product launch"))'
 ```
 
-This function is intentionally marked as `status: "stub"` and `implemented: false`; do not treat it as a completed prompt optimizer yet.
+This function is intentionally marked as `status: "stub"` and `implemented: false`; do not treat it as a completed prompt optimizer yet. Security is the primary capability.
 
 ## Workflow
 

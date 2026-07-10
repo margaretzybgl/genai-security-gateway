@@ -2,15 +2,19 @@
 
 ## Title
 
-GenAI Security & Optimization Gateway
+LLM Prompt Firewall
 
 ## Short Description
 
-Local-first prompt security gateway for AI agents and MCP tools.
+Block prompt injection before MCP tools and agents.
+
+## Tagline
+
+Audit prompts before they reach your agent, MCP tool, or AI gateway.
 
 ## Long Description
 
-GenAI Security & Optimization Gateway is a local-first front-door safety layer for AI agents, MCP tools, and LLM reverse proxies. It audits incoming prompts before they reach downstream models, tools, shells, browsers, code interpreters, or other high-privilege agent actions.
+LLM Prompt Firewall is a local-first front-door safety layer for AI agents, MCP tools, and LLM reverse proxies. It audits incoming prompts before they reach downstream models, tools, shells, browsers, code interpreters, or other high-privilege agent actions.
 
 The skill combines three layers:
 
@@ -31,13 +35,8 @@ Security, MCP, Agent Safety, Prompt Injection Defense
 - security
 - mcp
 - prompt-injection
-- jailbreak-detection
 - ai-agent
 - semantic-search
-- sentence-transformers
-- multilingual
-- local-first
-- gateway
 
 ## Entry Points
 
