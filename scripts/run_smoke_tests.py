@@ -7,13 +7,12 @@ from pathlib import Path
 from guard_core import check_security_v2, optimize_prompt_v1
 
 
-FIXTURE_PATH = Path(__file__).resolve().parent.parent / "references" / "test_prompts.jsonl"
+FIXTURE_PATH = Path(__file__).resolve().parent.parent / "references" / "test_prompts.json"
 
 
 def main() -> None:
     failures = []
-    for line_number, line in enumerate(FIXTURE_PATH.read_text(encoding="utf-8").splitlines(), start=1):
-        case = json.loads(line)
+    for line_number, case in enumerate(json.loads(FIXTURE_PATH.read_text(encoding="utf-8")), start=1):
         result = check_security_v2(case["message"], enable_semantic=False)
         if result["suggested_action"] != case["expected_action"]:
             failures.append((line_number, "suggested_action", case["expected_action"], result["suggested_action"]))

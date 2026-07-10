@@ -262,7 +262,7 @@ Do not treat the smoke tests as exhaustive security evaluation.
 Pull requests are welcome. Please include:
 
 - The detection case you are adding or changing.
-- A fixture in `references/test_prompts.jsonl` when possible.
+- A fixture in `references/test_prompts.json` when possible.
 - A short explanation of expected false-positive risk.
 
 ## Feedback / Issues
