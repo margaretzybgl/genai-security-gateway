@@ -1,9 +1,13 @@
 ---
 name: genai-security-gateway
-description: Local-first LLM prompt firewall for auditing untrusted prompts before they reach MCP tools, agents, or AI gateways. Detects API key leakage, prompt injection, jailbreak phrases, developer-mode bypass attempts, hidden-system-prompt extraction, and multilingual semantic variants; returns structured PASS or BLOCK decisions with detector, risk level, reason, and optional semantic score.
+description: Local-first LLM Prompt Firewall for MCP tools, AI agents, and gateways. Audits prompts before tool use; detects prompt injection, jailbreak attempts, developer-mode bypasses, hidden-system-prompt extraction, and API key leakage; returns structured PASS or BLOCK decisions with detector, risk level, reason, and optional semantic score.
 ---
 
 # LLM Prompt Firewall
+
+Audit prompts before they reach MCP tools, agents, or AI gateways.
+
+Use this skill when you need a repeatable prompt security preflight step for coding agents, research agents, MCP workflows, AI gateway requests, prompt engineering review, or secret leakage checks.
 
 ## Quick Start
 

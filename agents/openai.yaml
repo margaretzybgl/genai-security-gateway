@@ -1,7 +1,7 @@
 interface:
   display_name: "LLM Prompt Firewall"
-  short_description: "Block prompt injection before tools"
-  default_prompt: "Use $genai-security-gateway to audit this prompt for GenAI security risk."
+  short_description: "Audit prompts before MCP tools and agents"
+  default_prompt: "Use $genai-security-gateway to audit this prompt for prompt injection, jailbreak attempts, and API key leakage before it reaches tools."
 
 policy:
   allow_implicit_invocation: true
